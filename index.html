@@ -1,43 +1,10 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Daily Review Quote</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            font-family: Arial, sans-serif;
-        }
-        #quote {
-            font-size: 24px;
-            text-align: center;
-        }
-    </style>
-</head>
-<body>
-    <div id="quote">Loading...</div>
-    <script>
-        const token = "X0fzb8xEvOX81OpdeKWhWKCLhgCQ26qBhowIxPHRZp3jq8sBEv"; // use your access token here
-
-        const fetchDailyReview = async () => {
-            const response = await fetch('https://readwise.io/api/v2/review/', {
-                method: 'GET',
-                headers: {
-                    Authorization: `Token ${token}`,
-                },
-            });
-            const responseJson = await response.json();
-            return responseJson;
-        };
-
-        const displayQuote = async () => {
-            const dailyReviewHighlights = await fetchDailyReview();
-            document.getElementById('quote').innerText = dailyReviewHighlights.results[0].text;
-        };
-
-        displayQuote();
-    </script>
-</body>
-</html>
+<!-- Copy and Paste Me -->
+<div class="glitch-embed-wrap" style="height: 420px; width: 100%;">
+  <iframe
+    src="https://glitch.com/embed/#!/embed/focusmode?path=index.html&previewSize=100"
+    title="focusmode on Glitch"
+    allow="geolocation; microphone; camera; midi; encrypted-media; xr-spatial-tracking; fullscreen"
+    allowFullScreen
+    style="height: 100%; width: 100%; border: 0;">
+  </iframe>
+</div>
